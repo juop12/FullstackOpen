@@ -11,7 +11,7 @@ sequenceDiagram
 
     activate server
     Note left of server: The server adds a new note object {<String>, <Date>} to an array called notes.<br/>It does not persist the array, its all in memory
-    server-->>browser: STATUS 201 Created
+    server-->>browser: STATUS 201 Created, responseText: {"message":"note created"}
     deactivate server
 
 ```
